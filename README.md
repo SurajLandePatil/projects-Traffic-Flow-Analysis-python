@@ -28,27 +28,30 @@ Install dependencies:
 pip install opencv-python numpy torch pandas
 pip install filterpy  # required for SORT tracker
 
-
+```
+---
 
 ## Download the SORT tracker Python file:
+```
 wget https://raw.githubusercontent.com/abewley/sort/master/sort.py
 
-
+```
 ## Usage
 Download the traffic video from the YouTube link and save as traffic.mp4 in the project folder.
 Run the script:
+```
 python main.py
-
+```
 ## ⚙️ Customization
 
 Lane Boundaries — Edit these values in the script to match your video:
-
+```
 lane_boundaries = [
     int(frame_width*0.40),  # Lane 1-2 boundary
     int(frame_width*0.60),  # Lane 2-3 boundary
     int(frame_width*0.90)   # Lane 3 end
 ]
-
+```
 
 Counting Line Position — Change the green_line_y value to adjust the counting line height.
 
